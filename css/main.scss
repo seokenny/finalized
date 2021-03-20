@@ -375,7 +375,7 @@ button:active {
     }
     &:hover .backtotop_text {
         color: $lightgreen;
-        transition: color .15s ease-in-out;
+        transition: color .25s ease-in-out;
     }
     &_svg {
         cursor: pointer;
@@ -385,12 +385,12 @@ button:active {
         left: 50%;
         top: .7em;
         transform: translate(-50%, 0);
-        transition: all .15s ease-in-out;
+        transition: all .25s ease-in-out;
     }
     &_text {
         cursor: pointer;
         display: inline-block;
-        transition: color .2s ease-in-out;
+        transition: color .25s ease-in-out;
     }
 }
 

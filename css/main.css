@@ -545,8 +545,8 @@ button:active {
 
 .backtotop:hover .backtotop_text {
   color: #89B0AE;
-  -webkit-transition: color .15s ease-in-out;
-  transition: color .15s ease-in-out;
+  -webkit-transition: color .25s ease-in-out;
+  transition: color .25s ease-in-out;
 }
 
 .backtotop_svg {
@@ -558,15 +558,15 @@ button:active {
   top: .7em;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
-  -webkit-transition: all .15s ease-in-out;
-  transition: all .15s ease-in-out;
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
 }
 
 .backtotop_text {
   cursor: pointer;
   display: inline-block;
-  -webkit-transition: color .2s ease-in-out;
-  transition: color .2s ease-in-out;
+  -webkit-transition: color .25s ease-in-out;
+  transition: color .25s ease-in-out;
 }
 
 .next_proj {
