@@ -9,8 +9,13 @@ var currentScrollPos = window.pageYOffset;
   prevScrollpos = currentScrollPos;
 }
 
+$(window).on('unload', function() {
+  $(window).scrollTop(0);
+});
+
 $(document).ready(function(){
     // $(this).scrollTop(0);
+    $(window).scrollTop(0);
     });
     $(".home_works").click(function() {
           
