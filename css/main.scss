@@ -158,21 +158,21 @@ button:active {
                     // border-bottom: 1px solid #eee;
                 }
                 &-header {
-                    font-family: "Eina3Bold";
+                    // font-family: "Eina3Bold";
                     font-weight: bold;
                     font-size: 1.5em;
                 }
                 &-para {
                     font-size: .9em;
                     color: $darkpurp;
-                    font-weight: 700;
+                    font-weight: 500;
                 }
                 &-btn {
                     margin-top: 1.25em;
                     border: 1px solid black;
                     background-color: unset;
                     padding: .5em;
-                    font-size: 1em;
+                    font-size: .9em;
                     font-weight: 600;
                     cursor: pointer;
                     transition: background-color .2s ease-in-out;
