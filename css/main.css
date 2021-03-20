@@ -122,6 +122,11 @@
   src: url("../fonts/Eina03-SemiBold.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: 'Eina3Light';
+  src: url("../fonts/Eina03-Light.ttf") format("truetype");
+}
+
 body, ul, ol, li, h1, h2, h3, h4, h5, h6, p {
   margin: unset;
   padding: unset;
@@ -226,7 +231,7 @@ button:active {
 
 .hero_image {
   margin-top: 7em;
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
   display: block;
   text-align: center;
 }
@@ -244,20 +249,30 @@ button:active {
   width: 200px;
 }
 
+.contain .hero_text {
+  margin-bottom: 1em;
+}
+
 .contain .hero_text-header {
+  font-family: "Eina3Bold";
   font-size: 2em;
 }
 
 .contain .hero_text-subhead {
-  font-style: italic;
+  font-family: "Eina3Regular";
   font-size: 1.1em;
   margin: 1.1em 0;
 }
 
 .contain .hero_text-para {
+  font-family: "Eina3Light";
   font-size: .9em;
   width: 90%;
   margin: auto;
+}
+
+.contain .hero_text-para-block {
+  font-family: "Eina3Light";
 }
 
 .contain .hero_divider {
@@ -291,7 +306,7 @@ button:active {
 }
 
 .contain .work_box-text {
-  text-align: center;
+  text-align: left;
   padding: 1.5em 0;
   margin-bottom: 1em;
 }
@@ -299,6 +314,7 @@ button:active {
 .contain .work_box-text-header {
   font-weight: bold;
   font-size: 1.5em;
+  color: #333;
 }
 
 .contain .work_box-text-para {
@@ -309,10 +325,12 @@ button:active {
 
 .contain .work_box-text-btn {
   margin-top: 1.25em;
-  border: 1px solid black;
+  border: 1px solid slategray;
+  color: slategray;
   background-color: unset;
-  padding: .5em;
-  font-size: .9em;
+  padding: .6em 1em;
+  padding-top: .8em;
+  font-size: .8em;
   font-weight: 600;
   cursor: pointer;
   -webkit-transition: background-color .2s ease-in-out;
@@ -410,6 +428,8 @@ button:active {
   height: unset;
   position: unset;
   margin: unset;
+  display: block;
+  width: 100%;
 }
 
 #fullwork .work_box-text {
@@ -418,7 +438,7 @@ button:active {
 }
 
 #fullwork .work_box-text-header {
-  font-family: "Lora";
+  font-family: "Eina3Regular";
   margin-bottom: .5em;
 }
 
@@ -575,7 +595,8 @@ button:active {
 
 .bold {
   font-weight: 600;
-  font-family: "VolteSemibold";
+  font-family: "VolteRegular";
+  color: #11151A;
 }
 
 .footer {
@@ -613,6 +634,18 @@ button:active {
   font-weight: 100;
 }
 
+.work_box-text-header {
+  font-family: "Eina3Bold";
+}
+
+.work_box-text-para, .page_list-sub, .next_proj {
+  font-family: "Eina3Regular";
+}
+
+.work_box-text-btn, .about_text-para, .footer_text-para, .designed, .email a, .backtotop_text {
+  font-family: "Eina3Light" !important;
+}
+
 @media only screen and (min-width: 500px) {
   .contain .hero_image-img {
     width: 200px;
@@ -637,18 +670,29 @@ button:active {
 
 @media only screen and (min-width: 717px) {
   .about_text {
-    width: 537px;
     margin: auto;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .contain .work_box {
+    width: 48%;
+    margin: 2em 1% 0 1%;
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 772px) {
+  .contain .about_text {
+    width: 643px;
   }
 }
 
 @media only screen and (min-width: 890px) {
   .nav_contain {
-    width: 787.5px;
     margin: auto;
   }
   .contain .work {
-    width: 787.5px;
     margin: auto;
   }
   #fullwork .work {
@@ -671,6 +715,16 @@ button:active {
   }
   #conclusion {
     padding-bottom: 1em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .nav_contain {
+    width: 1066.5px;
+    margin: auto;
+  }
+  .contain .work {
+    width: 1066.5px;
   }
 }
 /*# sourceMappingURL=main.css.map */

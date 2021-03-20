@@ -20,6 +20,10 @@ a {
     color: unset;
 }
 
+body {
+    // background-color: $ogwhite;
+}
+
 ol, ul, li {
     color: $darkpurp;
 }
@@ -86,7 +90,7 @@ button:active {
 
 .hero_image {
     margin-top: 7em;
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
     display: block;
     text-align: center;
 }
@@ -104,18 +108,25 @@ button:active {
             }
         }
         &_text {
+            margin-bottom: 1em;
             &-header {
+                font-family: "Eina3Bold";
                 font-size: 2em;
             }
             &-subhead {
-                font-style: italic;
+                // font-style: italic;
+                font-family: "Eina3Regular";
                 font-size: 1.1em;
                 margin: 1.1em 0;
             }
             &-para {
+                font-family: "Eina3Light";
                 font-size: .9em;
                 width: 90%;
                 margin: auto;
+                &-block {
+                    font-family: "Eina3Light";
+                }
             }
         }
         &_divider {
@@ -149,7 +160,7 @@ button:active {
                 // position: absolute;
                 // bottom: 0;
                 // padding: 2em 0 2.5em 2.5em;
-                text-align: center;
+                text-align: left;
                 padding: 1.5em 0;
                 margin-bottom: 1em;
                 &-contain {
@@ -161,6 +172,7 @@ button:active {
                     // font-family: "Eina3Bold";
                     font-weight: bold;
                     font-size: 1.5em;
+                    color: #333;
                 }
                 &-para {
                     font-size: .9em;
@@ -169,10 +181,12 @@ button:active {
                 }
                 &-btn {
                     margin-top: 1.25em;
-                    border: 1px solid black;
+                    border: 1px solid slategray;
+                    color: slategray;
                     background-color: unset;
-                    padding: .5em;
-                    font-size: .9em;
+                    padding: .6em 1em;
+                    padding-top: .8em;
+                    font-size: .8em;
                     font-weight: 600;
                     cursor: pointer;
                     transition: background-color .2s ease-in-out;
@@ -257,11 +271,13 @@ button:active {
             height: unset;
             position: unset;
             margin: unset;
+            display: block;
+            width: 100%;
             &-text {
                 position: unset;
                 text-align: left;
                 &-header {
-                    font-family: "Lora";
+                    font-family: "Eina3Regular";
                     margin-bottom: .5em;
                 }
                 &-para {
@@ -400,7 +416,8 @@ button:active {
 
 .bold {
     font-weight: 600;
-    font-family: "VolteSemibold";
+    font-family: "VolteRegular";
+    color: $datadoveblack;
 }
 
 .footer {
@@ -432,6 +449,18 @@ button:active {
     color: $lightgray;
     // font-family: "Eina3Regular";
     font-weight: 100;
+}
+
+.work_box-text-header {
+    font-family: "Eina3Bold";
+}
+
+.work_box-text-para, .page_list-sub, .next_proj {
+    font-family: "Eina3Regular";
+}
+
+.work_box-text-btn, .about_text-para, .footer_text-para, .designed, .email a, .backtotop_text {
+    font-family: "Eina3Light" !important;
 }
 
 @media only screen and (min-width: 500px) {
@@ -477,20 +506,41 @@ button:active {
 @media only screen and (min-width: 717px) {
     .about {
         &_text {
-            width: 537px;
+            // width: 537px;
             margin: auto;
+        }
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    .contain {
+        & .work {
+            &_box {
+                width: 48%; 
+                margin: 2em 1% 0 1%;
+                display: inline-block;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 772px) {
+    .contain {
+        & .about {
+            &_text {
+                width: 643px;
+            }
         }
     }
 }
 
 @media only screen and (min-width: 890px) {
     .nav_contain {
-        width: 787.5px;
         margin: auto;
     }
     .contain {
         & .work {
-            width: 787.5px;
+            // width: 787.5px;
             margin: auto;
         }
     }
@@ -518,5 +568,20 @@ button:active {
     }
     #conclusion {
         padding-bottom: 1em;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .nav_contain {
+        width: 1066.5px;
+        margin: auto;
+    }
+    .contain {
+        & .work {
+            width: 1066.5px;
+            &_box {
+
+            }
+        }
     }
 }

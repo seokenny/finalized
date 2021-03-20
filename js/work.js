@@ -14,16 +14,13 @@ $(window).on('unload', function() {
  });
 
 $(".backtotop_svg").click(function() { 
-    $("body,html").animate({
-        scrollTop: $("body").offset().top}, 800);
+  $("html, body").animate({scrollTop: 0}, 700);
 });
 
 $(".backtotop").click(function() { 
-    $("body,html").animate({
-        scrollTop: $("body").offset().top}, 800);
+  $("html, body").animate({scrollTop: 0}, 700);
 });
 
 $(".backtotop_text").click(function() { 
-    $("body,html").animate({
-        scrollTop: $("body").offset().top}, 800);
+  $("html, body").animate({scrollTop: 0}, 700);
 });
