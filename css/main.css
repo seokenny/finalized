@@ -363,7 +363,7 @@ button:active {
 }
 
 .contain .about_text {
-  margin-top: .5em;
+  margin-top: .75em;
   font-weight: 500;
   font-size: 1em;
 }
@@ -608,6 +608,7 @@ button:active {
 .footer_text {
   font-weight: 500;
   font-size: 1em;
+  padding-top: .4em;
 }
 
 .email {
