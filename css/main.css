@@ -338,12 +338,14 @@ button:active {
 
 .contain .work_box-image-slide-text {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   text-align: center;
   color: #11151A;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .contain .work_box-image-slide-text-header {
@@ -362,6 +364,12 @@ button:active {
   top: 0;
   left: 0;
   opacity: 1;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.contain .work_box-image:hover .work_box-image-slide-text {
+  top: 50%;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }

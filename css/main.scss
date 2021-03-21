@@ -186,11 +186,12 @@ button:active {
                     transition: all .3s ease-in-out;
                     &-text {
                         position: absolute;
-                        top: 50%;
+                        top: 60%;
                         left: 50%;
                         transform: translate(-50%, -50%);
                         text-align: center;
                         color: $datadoveblack;
+                        transition: all .3s ease-in-out;
                         &-header {
                             font-family: "Eina3Bold";
                         }
@@ -207,6 +208,10 @@ button:active {
                     top: 0;
                     left: 0;
                     opacity: 1;
+                    transition: all .3s ease-in-out;
+                }
+                &:hover .work_box-image-slide-text {
+                    top: 50%;
                     transition: all .3s ease-in-out;
                 }
             }
