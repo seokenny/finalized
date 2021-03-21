@@ -10,7 +10,7 @@ var currentScrollPos = window.pageYOffset;
 }
 
 $(window).on('unload', function() {
-    $(window).scrollTop(0);
+  $("html, body").animate({scrollTop: 0}, 700);
  });
 
 $(".backtotop_svg").click(function() { 
