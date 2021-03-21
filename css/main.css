@@ -145,6 +145,12 @@ body {
   font-family: "Lora";
 }
 
+.present {
+  font-size: .5em;
+  font-family: "Eina3Light";
+  color: #89B0AE;
+}
+
 a {
   text-decoration: none;
   color: unset;
